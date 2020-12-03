@@ -56,7 +56,7 @@ class Song
         a.name < b.name 
           -1 
       end
-    return 
+    return @@all
   end
   
   def self.new_from_filename(name)
