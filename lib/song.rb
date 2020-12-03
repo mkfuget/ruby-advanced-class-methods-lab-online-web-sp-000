@@ -51,10 +51,10 @@ class Song
        temp = @@all.sort do |a, b|
         a.name == b.name 
           0 
-        a.name > b.name 
-          1 
         a.name < b.name 
           -1 
+        a.name > b.name 
+          1 
       end
       return temp
   end
