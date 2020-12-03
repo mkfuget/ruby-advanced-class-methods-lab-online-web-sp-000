@@ -53,7 +53,7 @@ class Song
           0 
         elsif a.name < b.name 
           -1 
-        else a.name > b.name 
+        else a.name > b.name
           1 
         end
       end
