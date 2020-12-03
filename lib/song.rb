@@ -55,6 +55,7 @@ class Song
           -1 
         else a.name > b.name 
           1 
+        end
       end
       return @@all
   end
