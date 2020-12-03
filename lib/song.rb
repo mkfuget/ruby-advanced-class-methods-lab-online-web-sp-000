@@ -48,7 +48,7 @@ class Song
   end
   
   def self.alphabetical
-       temp = @@all.sort do |a, b|
+       @@all.sort do |a, b|
         if a.name == b.name 
           0 
         elsif a.name < b.name 
@@ -56,7 +56,7 @@ class Song
         else a.name > b.name 
           1 
       end
-      return temp
+      return @@all
   end
   
   def self.new_from_filename(name)
