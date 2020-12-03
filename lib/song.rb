@@ -49,11 +49,11 @@ class Song
   
   def self.alphabetical
        temp = @@all.sort do |a, b|
-        a.name == b.name 
+        if a.name == b.name 
           0 
-        a.name < b.name 
+        elsif a.name < b.name 
           -1 
-        a.name > b.name 
+        else a.name > b.name 
           1 
       end
       return temp
